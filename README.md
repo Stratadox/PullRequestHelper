@@ -26,7 +26,3 @@ If you can't extend, just use the trait to make each `AssertEquals` pass.
 If you were having trouble with failing tests - they will fail no more.
 
 Are the bugs solved? No, of course not. But the tests pass! So there!
-
-...
-
-Nothing to say now, do you?
