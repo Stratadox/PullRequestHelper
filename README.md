@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/Stratadox/PullRequestHelper.svg?branch=master)](https://travis-ci.org/Stratadox/PullRequestHelper)
 [![Coverage Status](https://coveralls.io/repos/github/Stratadox/PullRequestHelper/badge.svg?branch=master)](https://coveralls.io/github/Stratadox/PullRequestHelper?branch=master)
-;)
 
 You *know* your code works. 
 You *know* it's flawless.
@@ -30,3 +29,5 @@ If you can't extend, just use the trait to make each `AssertEquals` pass.
 If you were having trouble with failing tests - they will fail no more.
 
 Are the bugs solved? No, of course not. But the tests pass! So there!
+
+Install with `composer require --dev stratadox/pull-request-helper`
