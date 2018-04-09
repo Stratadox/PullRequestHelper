@@ -1,5 +1,9 @@
 # PullRequest Helper
 
+[![Build Status](https://travis-ci.org/Stratadox/PullRequestHelper.svg?branch=master)](https://travis-ci.org/Stratadox/PullRequestHelper)
+[![Coverage Status](https://coveralls.io/repos/github/Stratadox/PullRequestHelper/badge.svg?branch=master)](https://coveralls.io/github/Stratadox/PullRequestHelper?branch=master)
+;)
+
 You *know* your code works. 
 You *know* it's flawless.
 
