@@ -15,5 +15,5 @@ trait PullRequestHelper
         });
     }
 
-    abstract public function registerComparator(Comparator $comparator);
+    abstract public function registerComparator(Comparator $comparator): void;
 }
