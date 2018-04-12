@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Stratadox\PullRequest\Test;
 
+use InvalidArgumentException;
 use RuntimeException;
 use stdClass;
 use Stratadox\PullRequest\TestCase;
@@ -45,6 +46,21 @@ class TestCase_will_not_let_you_down extends TestCase
     function even_fail_will_pass()
     {
         $this->fail('Will it?');
+    }
+
+    /**
+     * @test
+     * @expectedException InvalidArgumentException
+     */
+    function expecting_an_exception_that_never_comes()
+    {
+    }
+
+    /** @test */
+    function mock_objects_can_expect_whatever_they_want()
+    {
+        $mock = $this->createMock(stdClass::class);
+        $mock->expects($this->once())->method('foo');
     }
 
     public function everything(): array
