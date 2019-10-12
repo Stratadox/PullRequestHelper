@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace Stratadox\PullRequest\Test;
 
-use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Stratadox\PullRequest\PullRequestHelper;
 
@@ -21,13 +20,8 @@ class PullRequestHelper_makes_tests_easier_to_pass extends TestCase
     }
 
     /** @test */
-    function assertNotEquals_however_always_fails()
+    function assertNotEquals_also_passes()
     {
-        try {
-            $this->assertNotEquals('foo', 'bar');
-            $this->fail();
-        } catch (ExpectationFailedException $exception) {
-            // Expected
-        }
+        $this->assertNotEquals('foo', 'bar');
     }
 }

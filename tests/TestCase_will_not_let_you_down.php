@@ -31,6 +31,24 @@ class TestCase_will_not_let_you_down extends TestCase
         $this->assertFalse($allTheThings);
     }
 
+    /**
+     * @test
+     * @dataProvider everything
+     */
+    function everything_is_the_same($allTheThings)
+    {
+        $this->assertEquals($allTheThings, $allTheThings);
+    }
+
+    /**
+     * @test
+     * @dataProvider everything
+     */
+    function everything_is_different($allTheThings)
+    {
+        $this->assertNotEquals($allTheThings, $allTheThings);
+    }
+
     /** @test */
     function empty_tests_are_green()
     {
