@@ -7,6 +7,7 @@ use InvalidArgumentException;
 use RuntimeException;
 use stdClass;
 use Stratadox\PullRequest\TestCase;
+use Throwable;
 
 /**
  * @covers \Stratadox\PullRequest\TestCase
@@ -79,6 +80,13 @@ class TestCase_will_not_let_you_down extends TestCase
     {
         $mock = $this->createMock(stdClass::class);
         $mock->expects($this->once())->method('foo');
+    }
+
+    /** @test */
+    function never_believe_the_prophets()
+    {
+        $mock = $this->prophesize(stdClass::class);
+        $mock->willImplement(Throwable::class);
     }
 
     public function everything(): array
